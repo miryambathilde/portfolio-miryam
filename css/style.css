@@ -1,0 +1,143 @@
+/* Variables */
+
+:root {
+	--main-color: #e02f6b;
+	--blue: #0000ff;
+	--blue-dark: #18293c;
+	--orange: #ffa500;
+	--green-yellow: #cddc39;
+	--pink-light: #efa2b4;
+	--cyan-light: #aef1ee;
+	--white: #fff;
+	--white-alpha-40: rgba(255, 255, 255, 0.4);
+	--white-alpha-25: rgba(255, 255, 255, 0.25);
+	--backdrop-filter-blur: blur(5px);
+}
+
+/* Global Settings */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	--webkit-font-smoothing: antialiased;
+	--moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-image: linear-gradient(
+		to bottom right,
+		var(--pink-light),
+		var(--cyan-light)
+	);
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	color: var(--blue-dark);
+	line-height: 1.5;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	padding: 5vh 15px;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--green-yellow);
+	z-index: -1;
+	opacity: 0.12;
+	/* border-radius: 30px; */
+}
+
+h1,
+h2 {
+	font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+section {
+	background-color: var(--white-alpha-25);
+	border: 1px solid var(--white-alpha-40);
+	min-height: 90vh;
+	border-radius: 30px;
+}
+
+.main {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container {
+	padding: 0 40px;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* Home Section */
+
+.home-section {
+	display: flex;
+	padding: 120px 0;
+}
+
+.home-text,
+.home-img {
+	width: 50%;
+	padding: 15px;
+}
+
+.home-text p {
+	font-size: 18px;
+}
+.home-text h1 {
+	font-size: 50px;
+	text-transform: capitalize;
+}
+.home-text h2 {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.home-img .img-box {
+	max-width: 360px;
+	background-color: var(--white-alpha-25);
+	border-radius: 5%;
+	border: 3px solid var(--white-alpha-25);
+	margin: auto;
+}
+
+.home-img .img-box img {
+	width: 100%;
+	border-radius: 5%;
+}
