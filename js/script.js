@@ -2,7 +2,7 @@
 
 const tabsContainer = document.querySelector(".about-tabs"),
 
-aboutSection = document.querySelector(".section-about");
+	aboutSection = document.querySelector(".section-about");
 
 tabsContainer.addEventListener("click", (e) => {
 	if (e.target.classList.contains("tab-item") && !e.target.classList.contains("active")) {
