@@ -240,6 +240,92 @@ button {
 	}
 }
 
+@keyframes zoomInOut {
+	0%,
+	100% {
+		transform: scale(0.5);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+@keyframes zoomOutIn {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+}
+
+@keyframes bounceTop {
+	0%,
+	100% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+}
+
+/* Background Circles */
+
+.bg-circles {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	max-width: 1200px;
+	width: calc(100% - 30px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bg-circles div {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.bg-circles .circle-1 {
+	height: 60px;
+	width: 60px;
+	background-color: var(--blue);
+	left: 5%;
+	top: 10%;
+	opacity: 0.3;
+	animation: zoomInOut 8s linear infinite;
+}
+
+.bg-circles .circle-2 {
+	height: 80px;
+	width: 80px;
+	background-color: var(--main-color);
+	left: 30%;
+	top: 50%;
+	opacity: 0.4;
+	animation: bounceTop 5s ease-in-out infinite;
+}
+
+.bg-circles .circle-3 {
+	height: 100px;
+	width: 100px;
+	background-color: var(--white);
+	top: 40%;
+	right: -50px;
+	opacity: 0.5;
+	animation: zoomOutIn 8s linear infinite;
+}
+
+.bg-circles .circle-4 {
+	height: 50px;
+	width: 50px;
+	background-color: var(--orange);
+	top: 80%;
+	left: -25px;
+	opacity: 0.6;
+	animation: bounceTop 3s ease-in-out infinite;
+}
+
 /* Overlay */
 
 .overlay {
