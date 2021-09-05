@@ -2,4 +2,4 @@
 
 ## Portfolio hecho con HTML, CSS y JS
 
-https://app.netlify.com/sites/portfolio-miryam/overview
+https://portfolio-miryam.netlify.app/
