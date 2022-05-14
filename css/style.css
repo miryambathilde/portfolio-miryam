@@ -1057,9 +1057,7 @@ button {
 }
 
 .about-text .timeline-item a {
-    color: var(
-		--blue-dark
-	);
+    color: var(--blue-dark);
 }
 
 .about-text .timeline-item a:hover, .about-text .timeline-item a:focus{
