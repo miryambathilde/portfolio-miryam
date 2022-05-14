@@ -1057,12 +1057,12 @@ button {
 }
 
 .about-text .timeline-item a {
-    color: var(--blue-dark);
+    color: var(--blue-dark) !important;
 }
 
 .about-text .timeline-item a:hover, .about-text .timeline-item a:focus{
     background-color: transparent;
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .about-text
