@@ -1056,6 +1056,17 @@ button {
 		40px;
 }
 
+.about-text .timeline-item a {
+    color: var(
+		--blue-dark
+	);
+}
+
+.about-text .timeline-item a:hover, .about-text .timeline-item a:focus{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
 .about-text
 	.timeline-item::before {
 	content: "";
