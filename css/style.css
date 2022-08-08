@@ -803,6 +803,9 @@ button {
 	margin: 0 15px 15px 0;
 }
 
+.timeline .timeline-item ul li {
+	list-style: disc;
+}
 /* CV and contact */
 .portfolio-cv {
 	display: flex;
@@ -858,6 +861,14 @@ button {
 .portfolio-popup.open {
 	visibility: visible;
 	overflow-y: auto;
+}
+
+.portfolio-popup.open .general-info ul {
+	padding-left: unset;
+}
+
+.portfolio-popup.open .general-info ul li {
+	list-style: none;
 }
 
 .pp-inner {
