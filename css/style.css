@@ -95,7 +95,7 @@ img {
 }
 
 ul {
-	list-style: none;
+	padding-left: 18px;
 }
 
 section {
@@ -541,6 +541,7 @@ button {
 
 .header .nav-inner ul li {
 	text-align: center;
+	list-style: none;
 }
 
 .header .nav-inner ul li a {
@@ -834,6 +835,7 @@ button {
 
 .portfolio-item-thumbnail img {
 	width: 100%;
+	max-height: 132px;
 	border-radius: 5px;
 }
 
@@ -1026,6 +1028,11 @@ a:focus {
 
 	.contact-info-item {
 		padding: 0;
+	}
+
+	.portfolio-item-thumbnail img {
+		max-height: 300px;
+
 	}
 }
 
