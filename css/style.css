@@ -203,6 +203,7 @@ button {
 	overflow: hidden;
 	vertical-align: middle;
 	transition: color 0.3s ease;
+	/* margin: auto; */
 }
 
 .btn::before {
@@ -821,7 +822,7 @@ button {
 
 .portfolio-item {
 	width: calc((100% / 3) - 30px);
-	margin: 0 15px 30px;
+	margin: 0 15px 60px;
 }
 
 .portfolio-item h3 {
@@ -831,15 +832,21 @@ button {
 
 .portfolio-item-thumbnail {
 	padding: 10px;
+	padding-bottom: 20px;
 	background-color: var(--white-alpha-25);
 	border: 1px solid var(--white-alpha-40);
 	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .portfolio-item-thumbnail img {
 	width: 100%;
-	max-height: 132px;
 	border-radius: 5px;
+	aspect-ratio: 16/9;
+	object-fit: cover;
 }
 
 .portfolio-item-details {
@@ -869,6 +876,12 @@ button {
 
 .portfolio-popup.open .general-info ul li {
 	list-style: none;
+}
+
+button.btn.view-project-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .pp-inner {
